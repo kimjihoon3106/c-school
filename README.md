@@ -1,2 +1,2 @@
-# school1CRepository
-repository about C at school
+# C - school
+repository about C in school

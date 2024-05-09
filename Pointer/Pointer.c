@@ -191,3 +191,74 @@ int main(void) {
     printf("*++p' 후 주소 = %p, 값 = %d\n",p,*p);
 }*/
 //10
+/*
+int main(void) {
+    int arr[] = {100,200,300};
+    int* p = arr;
+    int value = 0;
+    printf("주소 = %u, 값 = %d, value = %d\n", p, *p, value);
+    value = *p + 1;
+    printf("주소 = %u, 값 = %d, value = %d\n", p, *p, value);
+    value = *(p+1);
+    printf("주소 = %u, 값 = %d, value = %d\n", p, *p, value);
+    value = *p++;
+    printf("주소 = %u, 값 = %d, value = %d\n", p, *p, value);
+    value = (*p)++;
+    printf("주소 = %u, 값 = %d, value = %d\n", p, *p, value);
+    value = *++p;
+    printf("주소 = %u, 값 = %d, value = %d\n", p, *p, value);
+    value = ++*p;
+    printf("주소 = %u, 값 = %d, value = %d\n", p, *p, value);
+}*/
+//11
+/*
+int main() {
+    int a[] = {1,2,3,4,5,6};
+    int* p = a;
+    int* q= a+3;
+    printf("%d\n",*(a+1));
+    printf("%d\n",*(p+2));
+    printf("%d\n",*(q+1));
+    printf("%d\n",p[1]);
+}*/
+//12
+/*
+int main() {
+    int a[5] = {100,200,300,400,500};
+    int* p = a;
+    printf("주소 = %d, 값= %d\n",p,*p);
+    printf("주소 = %d, 값= %d\n",p+1,*p+1);
+    printf("주소 = %d, 값= %d\n",p+1,*(p+1));
+}*/
+//13
+/*
+void array_copy(int a[], int b[], int size);
+void array_print(int* a, int size);
+int array_search(int* a, int size, int search);
+
+int main() {
+    int A[10] = {1,5,8,0,2,4,10};
+    int B[10] = {0};
+    array_copy(A,B,10);
+    array_print(B,10);
+    printf("개수 : %d\n",array_search(B,10,0));
+}
+
+void array_copy(int a[], int b[], int size){
+    for(int i = 0 ; i < size ; i++){
+        b[i] = a[i];
+    }
+}
+void array_print(int* a, int size) {
+    for(int i = 0 ; i < size ; i++){
+        printf("%d",a[i]);
+    }
+}
+int array_serach(int* a, int size, int search) {
+    int cnt = 0;
+    for(int i = 0 ; i < size ; i++){
+        if(a[i] == search)
+            cnt++;
+    }
+    return cnt;
+}*/

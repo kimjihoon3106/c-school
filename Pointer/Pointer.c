@@ -161,6 +161,7 @@ void get_sum_diff(int x, int y, int* p_sum, int* p_diff) {
 }*/
 
 //8-2
+/*
 void get_int(int* px, int* py);
 
 int main(void) {
@@ -169,3 +170,24 @@ int main(void) {
     printf("정수의 합은 %d \n",x+y);
     return 0;
 }
+
+void get_int(int* px, int* py) {
+    printf("2개의 정수를 입력하시오 : ");
+    scanf("%d %d",px,py);
+}*/
+//9
+/*
+int main(void) {
+    int a[5] = { 100, 200, 300, 400, 500};
+    int *p = a;
+    printf("주소 = %p, 값 = %d\n",p,*p);
+    *p++;
+    printf("*p++; 후 주소 = %p, 값 = %d\n",p,*p);
+    (*p)++;
+    printf("(*p)++; 후 주소 = %p, 값 = %d\n",p,*p);
+    ++*p;
+    printf("++* p; 후 주소 = %p, 값 = %d\n",p,*p);
+    *++p;
+    printf("*++p' 후 주소 = %p, 값 = %d\n",p,*p);
+}*/
+//10

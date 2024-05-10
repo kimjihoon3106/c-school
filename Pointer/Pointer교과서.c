@@ -30,7 +30,7 @@ int main(void){
 //3
 /*
 void robotMove(int pxp, int pyp, int mx, int my);
-void robotMove(int *pxp, int *pyp, int mx, int my);
+void robotMovept(int *pxp, int *pyp, int mx, int my);
 int main(void) {
     int x = 1;
     int y = 1;
@@ -113,6 +113,52 @@ int main(void){
         }
         else
             printf("6문자 이상, 숫자, 대문자, 소문자가 각 1개 이상 있어야 합니다.\n");
+    }
+    return 0;
+}*/
+//8
+/*
+int main(){
+    int a;
+    char* spring_term[6] = {"입춘","우수","경칩","춘분","청명","곡우"};
+    for(a = 0; a<6;a++){
+        printf("%s",spring_term[a]);
+    }
+    return 0;
+}*/
+//9
+/*
+int main()
+{
+    int a;
+    char *spring_term[6] = {"입춘","우수","경칩","춘분","청명","곡우"};
+    char tname[10];
+    scanf_s("%s",tname);
+    for(a=0;a<6;a++){
+        if(strcmp(spring_term[a], tname) == 0) {
+            printf("%s 봄 절기 입니다.",tname);
+            break;
+        }
+    }
+    return 0;
+}*/
+//10
+/*
+int main(void){
+    int a;
+    char animals[3][10] = {"dog","cat","lion"};
+    for(a=0;a<3;a++){
+        printf(" %d 번째 동물은 %s 입니다\n",a+1,animals[a]);
+    }
+    return 0;
+}*/
+//11
+/*
+int main(void){
+    int a;
+    char* pt = "I LOVE You";
+    for(a=7;a<10;a++){
+        printf("%c",*(pt + a));
     }
     return 0;
 }*/

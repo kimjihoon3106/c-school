@@ -71,6 +71,7 @@ int main(void) {
 }*/
 
 // 8.3 실습 3
+/*
 int main(void) {
     int cnt, size;
     char* dept[] = {
@@ -83,4 +84,4 @@ int main(void) {
     for(cnt = 0;cnt<size;cnt++){
         printf("%s\n",dept[cnt]);
     }
-}
+}*/

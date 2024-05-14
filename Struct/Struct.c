@@ -131,3 +131,85 @@ int main(void){
     return 0;
 }*/
 
+// 실습 6
+/*
+union example {
+    int i;
+    char c;
+};
+int main(void){
+    union example v;
+    
+    v.c = 'A';
+    printf("v.c:%c  v.i:%i\n",v.c,v.i);
+
+    v.i = 10000;
+    printf("v.c:%c  v.i:%i\n",v.c,v.i);
+}*/
+
+// 실습 7
+/*
+union mem {
+    unsigned long sno;
+    char name[10];
+    int age;
+};
+
+int main(void){
+    union mem udata; // 공동체 mem의 변수 udata 선언
+
+    printf("udata.sno의 크기는 %d\n",sizeof(udata.sno));
+    printf("udata.name의 크기는 %d\n",sizeof(udata.name));
+    printf("udata.age의 크기는 %d\n",sizeof(udata.age));
+
+    printf("udata.sno의 주소는 %u\n",&udata.sno);
+    printf("udata.name의 주소는 %u\n",&updata.name);
+    printf("updata.age의 주소는 %u\n",&udata.age);
+    return 0;
+}*/
+
+// 실습 8
+/*
+enum season{SP, SM, FA, WI};
+char *sname[] = {"spring","summer","fall","winter"};
+
+int main(void){
+    enum season s;
+    s = SM;
+
+    printF("%d번째 계절은 %s입니다.\n",s+1,sname[s]);
+    return 0;
+}*/
+
+// 실습 9
+/*
+typedef struct pummok {
+    int sno;
+    char name[10];
+    int age;
+} ST;
+
+int main(void){
+    ST m[3];
+    int cnt;
+
+    for (cnt = 0; cnt <3;cnt++){
+        printf("%d번째 학생의 학번, 성명, 나이 입력 \n",cnt + 1);
+        printf("학번 : ");
+        scanf("%d",&m[cnt].sno);
+        printf("성명 : ");
+        scanf("%s",m[cnt].name);
+        printf("나이 : ");
+        scanf("%d",&m[cnt].age);
+        printf(" \n");
+    }
+
+    printf("[입력한 학생 3명의 정보 출력] \n");
+    printf("%s\t\t %s\t\t %s\t \n","학번","성명","나이");
+
+    for(cnt =  0;cnt<3;cnt++){
+        printf("%d\t %s\t\t %d\t \n",m[cnt].sno,m[cnt].name,m[cnt].age);
+    }
+    return 0;
+}*/
+
